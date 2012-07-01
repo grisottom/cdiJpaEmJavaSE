@@ -13,7 +13,7 @@ public class EMProducer {
 
     @ExtensionManaged
     @Produces
-    @ConversationScoped
+    //@ConversationScoped
     @PersistenceUnit (unitName="cdiJpaEmJavaSE")
     EntityManagerFactory emf;
  	   
