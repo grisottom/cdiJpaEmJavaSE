@@ -1,6 +1,6 @@
 package any;
 
-import javax.enterprise.context.ConversationScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManagerFactory;
@@ -13,7 +13,7 @@ public class EMProducer {
 
     @ExtensionManaged
     @Produces
-    //@ConversationScoped
+    @ApplicationScoped
     @PersistenceUnit (unitName="cdiJpaEmJavaSE")
     EntityManagerFactory emf;
  	   
